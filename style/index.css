@@ -51,7 +51,6 @@ table {
 * {
     box-sizing: border-box;
     max-width: 100%;
-    border: 1px solid black;
 }
 html {
     font-size: 62.5%;
@@ -59,6 +58,8 @@ html {
 body {
     font-size: 1.6rem;
     line-height: 1.5;
+    font-family: 'Lobster', cursive;
+    color: maroon;
 }
 section {
     padding: 1% 0;
@@ -68,13 +69,14 @@ section {
 /* Header styles */
 
 header {
-    background-color: midnightblue;
+    background-color: maroon;
     padding: 0 0 2% 1%;
 }
 h1 {
     font-size: 3.5rem;
-    color:rgba(255, 255, 255, 0.721);
-    padding:0 0 1% 2%;
+    color: blanchedalmond;
+    padding:0 0 0 2%;
+    font-family: 'Dancing Script', cursive;
 }
 nav {
     display: flex;
@@ -82,25 +84,102 @@ nav {
     margin: 0 0 0 5%;
 } 
 nav a {
-    background-color: rgba(255, 255, 255, 0.721);
+    background-color: blanchedalmond;
     font-size: 1.8rem;
     text-decoration: none;
     width: 100%;
     text-align: center;
+    color: black;
 }
 /* First Section */
 .section1{
     display: flex;
+    height: 30vh;
+    width: 100%;
+    margin: 0 0 0 4%;
+}
+.left {
+    height: 28vh;
+    display: flex;
+}
+.left img {
+    width: 90%;
 }
 
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 28vh;
+}
+h2 {
+    font-size: 2.2rem;
+    margin: 0 10% 0 0%;
+    font-family: 'Dancing Script', cursive;
+}
+.myProjects {
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding: 1%;
+    margin: 0 70% 0 0%;
+    text-align: center;
+    background-color: blanchedalmond;
+    color: black;
+}
+.text p {
+    width: 80%;
+    line-height: 1;
+    letter-spacing: 1px;
+}
 
 /* Images Section */
 .images {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-direction: column;
+    height: 44vh
+}
+.imgRow1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.imgRow2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.pic {
+    display: flex;
+    align-content: column;
+    width: 100%;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.small {
+    width: 16vw;
+    height: 16vh;
+}
+.pic p {
+    text-align: center;
+    letter-spacing: 1px;
 }
 
-
-
 /* Footer Section Styles */
+footer {
+    text-align: center;
+    background-color: maroon;
+    color: blanchedalmond;
+    height: 15vh;
+    padding: 1% 0 0 0;
+} 
+footer p {
+    margin: 0 0 2% 0;
+    letter-spacing: 1px;
+}
+footer a {
+    background-color: blanchedalmond;
+    margin: 3% 0 0 0;
+    padding: 1% 3%;
+    text-decoration: none;
+    color: black;
+}
