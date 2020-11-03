@@ -82,6 +82,7 @@ nav {
     display: flex;
     width: 50%;
     margin: 0 0 0 5%;
+    height: 4vh;
 } 
 nav a {
     background-color: blanchedalmond;
@@ -90,18 +91,20 @@ nav a {
     width: 100%;
     text-align: center;
     color: black;
+    border: 1px solid black;
+    padding: 0 0 0 0;
 }
 /* First Section */
 .section1{
     display: flex;
-    height: 30vh;
+    height: 32vh;
     width: 100%;
     margin: 0 0 0 5%;
 }
 .left {
-    height: 26vh;
+    height: 36vh;
+    width: 36vw;
     display: flex;
-    width: 40%;
 }
 
 .text {
@@ -124,6 +127,7 @@ h2 {
     text-align: center;
     background-color: blanchedalmond;
     color: black;
+    border: 1px solid black;
 }
 .text p {
     width: 80%;
@@ -138,7 +142,8 @@ h2 {
     justify-content: space-evenly;
     width: 100%;
     flex-direction: column;
-    height: 44vh
+    height: 80vh;
+    margin: 0 10% 0 0;
 }
 .imgRow1 {
     display: flex;
@@ -157,14 +162,14 @@ h2 {
     justify-content: space-evenly;
 }
 .small {
-    width: 18vw;
-    height: 18vh;
+    width: 23vw;
+    height: 20vh;
     padding: 0 0 0 20%;
 }
 .pic p {
     text-align: center;
     letter-spacing: 1px;
-    margin: 0 7% 0 0;
+    margin: 0 0 0 10%;
 }
 
 /* Footer Section Styles */
@@ -187,8 +192,10 @@ footer a {
     text-decoration: none;
     color: black;
     font-size: 1.7rem;
+    border: 1px solid black;
 }
 /************** 800PX STYLES ***************/
+
 @media(max-width:800px){
     /* Header styles */
     header {
@@ -205,11 +212,14 @@ footer a {
         width: 80%;
         margin: 0 auto;
     } 
+    nav a {
+        padding: 0 0 1% 0;
+    }
     /* First Section */
     .section1{
-        display: flex;
-        height: 30vh;
         width: 100%;
+        display: flex;
+        height: 35vh;
         margin: 0 0 0 2%;
         justify-content: space-evenly;
     }
@@ -217,12 +227,12 @@ footer a {
         height: 25vh;
         display: flex;
         width: 125vw;
-        margin: 1% 0 0 4%;
+        margin: 5% 0 0 4%;
     }
     
     .text {
-        height: 26vh;
-        width: 60vw;
+        height: 32vh;
+        width: 65vw;
         margin: 0 0 0 10%;
     }
     h2 {
@@ -266,7 +276,7 @@ footer a {
         margin: 0 0 2% 0;
     }
     .small {
-        width: 21vw;
+        width: 30vw;
         height: 21vh;
         padding: 0 0 0 0;
     }
@@ -287,99 +297,76 @@ footer a {
 }
 
 /************** 500PX STYLES ***************/
+
 @media(max-width:500px){
     /* Header styles */
-    header {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-    }
+
     h1 {
-        font-size: 3rem;
-        padding:1% 0 1% 0;
+        font-size: 2rem;
     }
     nav {
         display: flex;
-        width: 80%;
-        margin: 0 auto;
+        flex-direction: column;
+        width: 25%;
+        height: 17vh;
     } 
     /* First Section */
     .section1{
+        width: 90%;
         display: flex;
-        height: 30vh;
-        width: 100%;
-        margin: 0 0 0 2%;
-        justify-content: space-evenly;
+        flex-direction: column;
+        height: 90vh;
+        justify-content: space-around;
     }
     .left {
-        height: 25vh;
+        height: 27vh;
         display: flex;
-        width: 125vw;
-        margin: 1% 0 0 4%;
+        width: 70vw;
+        margin: 1% 0 0 15%;
+        align-items: center;
     }
     
     .text {
         height: 26vh;
         width: 60vw;
-        margin: 0 0 0 10%;
+        margin: 0 0 0 23%;
+        text-align: center;
     }
     h2 {
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
     .myProjects {
-        font-size: 1.6rem;
-        margin: 0 75% 0 0%;
+        font-size: 1.5rem;
+        margin: 4% 30% 4% 20%;
     }
     .text p {
-        width: 80%;
-        line-height: 1.1;
-        font-size: 1.6rem;
+        width: 90%;
+        line-height: 1.2;
+        font-size: 1.5rem;
     }
     
     /* Images Section */
     .images {
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-        flex-direction: column;
-        height: 108vh;
+        height: 125vh;
     }
     .imgRow1 {
-        display: flex;
-        flex-wrap: wrap;
-        height: 50vh;
+        height: 60vh;
     }
     .imgRow2 {
-        display: flex;
-        flex-wrap: wrap;
-        height: 50vh;
+        height: 60vh;
     }
     .pic {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        width: 40vw;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        width: 50vw;
         margin: 0 0 2% 0;
     }
     .small {
-        width: 21vw;
-        height: 21vh;
-        padding: 0 0 0 0;
+        width: 40vw;
+        height: 25vh;
     }
 
-    .pic p {
-        letter-spacing: 1px;
-        margin: 0 0 0 1%;
-    }
-    
     /* Footer Section Styles */
-    footer {
-        height: 13vh;
-        padding: 2% 0 0 0;
-    } 
     footer p {
-        margin: 0 0 3% 0;
+        margin: 1% 0 3% 0;
+        font-size: 1.5rem;
     }
 }
